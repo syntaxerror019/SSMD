@@ -43,7 +43,7 @@ while True:
 			(startX, startY, endX, endY) = box.astype("int")
 			
 			#if CLASSES[idx] == "person":
-			if frame:
+			if True:
 				label = "{}: {:.2f}%".format(CLASSES[idx], confidence * 100)
 
 				cv2.rectangle(frame, (startX, startY), (endX, endY),
