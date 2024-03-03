@@ -42,7 +42,8 @@ while True:
 			# Convert them to integers: 130 76 393 224
 			(startX, startY, endX, endY) = box.astype("int")
 			
-			if CLASSES[idx] == "person":
+			#if CLASSES[idx] == "person":
+			if frame:
 				label = "{}: {:.2f}%".format(CLASSES[idx], confidence * 100)
 
 				cv2.rectangle(frame, (startX, startY), (endX, endY),
